@@ -10,6 +10,20 @@ IntelliJ IDEA / Netbeans / Eclipse
 
 RabbitMQ
 
+## Usage
+
+```python
+
+1) Execute the commands below: 
+
+    1.1) docker-compose up -d
+    1.2) docker exec rabbitmq rabbitmq-plugins enable rabbitmq_management
+    1.3) docker exec rabbitmq rabbitmqctl add_user test test    
+    1.4) docker exec rabbitmq rabbitmqctl set_user_tags test administrator
+    1.5) docker exec rabbitmq rabbitmqctl set_permissions -p rabbitmq-host test ".*" ".*" ".*"
+
+```
+
 ## Documentation
 
 ## Contributing

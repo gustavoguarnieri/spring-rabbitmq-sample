@@ -19,12 +19,14 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-validation:$springBootVersion")
-	implementation("org.springframework.boot:spring-boot-starter-web:$springBootVersion")	
+	implementation("org.springframework.boot:spring-boot-starter-web:$springBootVersion")
+	implementation("org.springframework.boot:spring-boot-starter-amqp:$springBootVersion")
 	implementation("io.github.microutils:kotlin-logging:2.1.23")
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.springframework.amqp:spring-rabbit-test:2.4.6")
 }
 
 tasks.withType<KotlinCompile> {
