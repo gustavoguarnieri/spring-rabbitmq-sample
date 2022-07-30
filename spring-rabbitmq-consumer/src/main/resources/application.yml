@@ -1,0 +1,19 @@
+server:
+  port: 9080
+  servlet:
+    context-path: /spring-rabbitmq-consumer
+
+spring:
+  rabbitmq:
+    host: localhost
+    port: '5672'
+    username: test
+    password: test
+    virtual-host: rabbitmq-host
+rabbitmq:
+  routing:
+    key: my_routing_key
+  exchange:
+    name: my_exchange
+  queue:
+    name: my_queue
